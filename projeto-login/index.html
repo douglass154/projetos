@@ -15,12 +15,18 @@
     
     <main>
         <section class="container">
-            <img src="imagens/img-praia.jpg" alt="foto de praia">
+            <div class="img-praia">
+                <!-- imagem nas CSS -->
+            </div>
 
             <div class="login-pag">
                 <h1>Login</h1>
                 <p>Seja vindo(a) de volta, faça login para acessar a sua conta, ou registre-se para criar uma nova.</p>
-
+                <div class="login-types">
+                    <a href="#" class="gmail-icon"><i class='bx bxl-gmail' ></i></a>
+                    <a href="#" class="facebook-icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="github-icon"><i class='bx bxl-github'></i></a>
+                </div>
                 <form action="cadastro.php" method="post" autocomplete="off">
                     <div class="form-user">
                         <label for="email">
@@ -35,7 +41,13 @@
                         </label>
                         <input type="password" name="password" id="password" required placeholder="Senha">
                     </div>
+
+                    <div class="buttons-submit">
+                        <input id="login" type="submit" value="Login">
+                        <input id="register" type="submit" value="Register">
+                    </div>
                 </form>
+                <a class="forgot-my-password" href="#">Esqueci minha senha</a>
             </div>
         </section>
     </main>

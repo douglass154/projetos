@@ -27,9 +27,8 @@ azul3: #027368 */
 
 body {
     background-color: var(--cor-azul-2);
-}
+    font-family: var(--fonte-principal);
 
-.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,34 +36,67 @@ body {
     min-height: 100vh;
 }
 
-img {
+.container {
+    background-color: white;
     border-radius: 15px;
-    width: 330px;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.486);
+}
+
+.img-praia {
+    background-image: url(../imagens/img-praia.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
 }
 
 .login-pag {
-    width: 330px;
-    background-color: white;
-    border-radius: 7px 7px 15px 15px;
-    padding: 15px;
+    width: 450px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
 
 .login-pag h1 {
     text-align: center;
-    font-family: var(--fonte-principal);
     font-weight: var(--fonte-weight-title);
 }
 
 .login-pag p {
-    text-justify: auto;
+    line-height: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
+.login-types {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    gap: 20px;
+    font-size: 1.7rem;
+}
+
+.gmail-icon,
+.facebook-icon,
+.github-icon {
+    background-color: var(--cor-azul-2);
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .form-user,
 .form-password {
@@ -72,7 +104,7 @@ img {
     padding: 7px;
     border-radius: 10px;
     margin: 5px;
-    width: 90%;
+    width: 98%;
 
     display: flex;
     align-items: center;
@@ -101,4 +133,43 @@ img {
 #email,
 #password:focus-visible {
     outline: none;
+}
+
+.buttons-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login,
+#register {
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+#login {
+    background: linear-gradient(200deg, #027368, #04BFAD);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.562);
+    color: white;
+}
+
+#register {
+    background-color: rgba(165, 164, 164, 0.329);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.562);
+}
+
+.forgot-my-password {
+    font-size: 1.2rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.forgot-my-password:hover {
+    color: var(--cor-azul-2);
+    text-decoration: underline;
+    transition: all 0.4s ease;
 }
