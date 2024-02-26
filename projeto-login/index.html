@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="">
+    <title>Projeto Login</title>
 </head>
+
 <body>
     
+    <main>
+        <section class="container">
+            <img src="imagens/img-praia.jpg" alt="foto de praia">
+
+            <div class="login-pag">
+                <h1>Login</h1>
+                <p>Seja vindo(a) de volta, faça login para acessar a sua conta, ou registre-se para criar uma nova.</p>
+
+                <form action="cadastro.php" method="post" autocomplete="off">
+                    <div class="form-user">
+                        <label for="email">
+                            <i id="email-icon" class='bx bxs-user'></i>
+                        </label>
+                        <input type="email" name="email" id="email" required placeholder="E-mail">
+                    </div>
+
+                    <div class="form-password">
+                        <label for="password">
+                            <i id="password-icon" class='bx bxs-lock-alt'></i>
+                        </label>
+                        <input type="password" name="password" id="password" required placeholder="Senha">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

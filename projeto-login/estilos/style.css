@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Paleta de cores 
+
+azul1: #04BFAD
+azul2: #038C7F
+azul3: #027368 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-azul-1: #04BFAD;
+    --cor-azul-2: #038C7F;
+    --cor-azul-3: #027368;
+
+    --fonte-principal: "Open Sans", sans-serif;
+
+    --fonte-weight-p: 400;
+    --fonte-weight-title: 700;
+}
+
+body {
+    background-color: var(--cor-azul-2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 15px;
+    width: 330px;
+}
+
+.login-pag {
+    width: 330px;
+    background-color: white;
+    border-radius: 7px 7px 15px 15px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-pag h1 {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-weight-title);
+}
+
+.login-pag p {
+    text-justify: auto;
+}
+
+
+.form-user,
+.form-password {
+    background-color: var(--cor-azul-3);
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#email-icon,
+#password-icon {
+    padding: 5px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#email,
+#password {
+    background-color: var(--cor-azul-1);
+    color: #000000;
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#email,
+#password:focus-visible {
+    outline: none;
+}
