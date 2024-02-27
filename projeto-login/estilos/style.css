@@ -36,6 +36,15 @@ body {
     min-height: 100vh;
 }
 
+main {
+    width: 90vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     background-color: white;
     border-radius: 15px;
@@ -75,19 +84,19 @@ body {
 
 .login-types {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 250px;
-    gap: 20px;
     font-size: 1.7rem;
+
+    width: 80%;
 }
 
 .gmail-icon,
 .facebook-icon,
 .github-icon {
-    background-color: var(--cor-azul-2);
-    color: white;
-    border-radius: 20px;
-    padding: 7px;
+    /* display: block; */
+    color: black;
+    font-size: 2.5rem;
 }
 
 
@@ -96,6 +105,8 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 90%;
 }
 
 .form-user,
@@ -149,6 +160,7 @@ form {
     padding: 10px;
     font-size: 1.1rem;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 #login {
@@ -170,6 +182,5 @@ form {
 
 .forgot-my-password:hover {
     color: var(--cor-azul-2);
-    text-decoration: underline;
     transition: all 0.4s ease;
 }
