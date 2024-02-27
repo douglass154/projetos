@@ -37,8 +37,8 @@ body {
 }
 
 main {
-    width: 90vw;
-    height: 90vh;
+    width: 90%;
+    height: 90%;
 
     display: flex;
     justify-content: center;
