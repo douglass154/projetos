@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(225deg, #027368, #04BFAD);
+    }
+
+    .container {
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-praia {
+        width: 30%;
+        height: 370px;
+    }
+
+    .login-pag {
+        width: 70%;
+    }
+
+    .login-types {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .form-user,
+    .form-password,
+    .buttons-submit {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(225deg, #027368, #04BFAD);
+    }
+
+    .container {
+        width: 950px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-praia {
+        width: 40%;
+        height: 490px;
+    }
+
+    .login-pag {
+        width: 60%;
+    }
+
+    .login-pag h1 {
+        font-size: 2rem;
+    }
+
+    .login-pag p {
+        font-size: 1.2rem;
+    }
+
+    .login-types {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .form-user,
+    .form-password {
+        padding: 7px;
+    }
+
+    #email-icon,
+    #password-icon {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    #email,
+    #password {
+        padding: 11px;
+        font-size: 1rem;
+    }
+
+    .form-user,
+    .form-password,
+    .buttons-submit {
+        width: 85%;
+    }
+
+    .buttons-submit {
+        padding-top: 8px;
+    }
+
+    #login,
+    #register {
+        font-size: 1.3rem;
+    }
+
+    .forgot-my-password {
+        font-size: 1.1rem;
+        padding-top: 15px;
+    }
+}
