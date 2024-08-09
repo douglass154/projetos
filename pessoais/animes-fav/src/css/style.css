@@ -12,7 +12,7 @@ main::after {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(141deg, rgba(200,40,0,0.8127626050420168) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3029586834733894) 75%, rgba(200,40,0,0.81) 100%);
+    background: linear-gradient(141deg, rgba(14,5,3,1) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.3029586834733894) 60%, rgba(14,5,3,1) 100%);
     z-index: -1;
 }
 
@@ -59,7 +59,7 @@ main::after {
 
 #op-title {
     font-family: 'OnePiece', 'Poppins', sans-serif;
-    color: black;
+    /* color: black; */
 }
 #bleach-title {
     font-family: 'Bleach', 'Poppins', sans-serif;
@@ -87,7 +87,7 @@ main::after {
 
 .infos .description.op {
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 }
 
