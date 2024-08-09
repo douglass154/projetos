@@ -1,0 +1,116 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main::after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(141deg, rgba(200,40,0,0.8127626050420168) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3029586834733894) 75%, rgba(200,40,0,0.81) 100%);
+    z-index: -1;
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
+
+.infos {
+    display: none;
+}
+
+.infos.active {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    color: white;
+}
+
+.infos h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    letter-spacing: 8px;
+}
+
+#op-title {
+    font-family: 'OnePiece', 'Poppins', sans-serif;
+    color: black;
+}
+#bleach-title {
+    font-family: 'Bleach', 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+#bc-title {
+    font-family: 'BlackClover', 'Poppins', sans-serif;
+}
+#ds-title {
+    font-family: 'DemonSlayer', 'Poppins', sans-serif;
+}
+#jjk-title {
+    font-family: 'JujutsuKaisen', 'Poppins', sans-serif;
+}
+
+.infos .description {
+    width: 49%;
+    font-size: 24px;
+    line-height: 40px;
+    height: 350px;
+    overflow: auto;
+    padding: 10px;
+    padding-right: 15px;
+}
+
+.infos .description.op {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.botoes-carrossel {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    border-color: white;
+}
+
+.botoes-carrossel .botao:hover {
+    transform: scale(1.3);
+    transition: transform 0.4s ease;
+}
+
+.botao.selected {
+    background-color: #ff1100fd;
+}
