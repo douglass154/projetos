@@ -1,0 +1,32 @@
+@media (max-width: 1280px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .infos.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos .description {
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 40px;
+    }
+
+    .infos .description {
+        width: 100%;
+    }
+
+    .content {
+        min-height: 70vh;
+    }
+}
