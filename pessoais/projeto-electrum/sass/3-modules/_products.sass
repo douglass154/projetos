@@ -1,0 +1,57 @@
+@use '../1-base/base-mixins' as bm
+@use '../1-base/variables' as *
+
+.products-grid-card
+   border: 1px solid $gray-text-color
+   position: relative
+   width: 20%
+   padding: 1rem
+   transition: .4s
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   align-items: center
+
+   @include bm.tablet
+      width: 24%
+
+   @include bm.mobile
+      width: 90%
+      margin: 1rem
+
+   &:hover
+      border-color: $primary-color
+
+   .label
+      text-transform: uppercase
+      border: 1px solid $primary-color
+      color: $primary-color
+      position: absolute
+      top: 1rem
+      right: 1rem
+      padding: 2px 6px
+
+   .new
+      background-color: $primary-color
+      color: $light-color
+
+   img
+      width: 100%
+
+   .category, .product-name, .product-price, .rating-box, .btn
+      margin-bottom: 1rem
+
+   .category
+      margin-top: 1rem
+      text-transform: uppercase
+      color: $gray-text-color
+
+   .product-name
+      text-transform: uppercase
+      font-size: 1.2rem
+      text-align: center
+
+   .product-price
+      color: $primary-color
+      font-size: 1.5rem
+      font-weight: bold

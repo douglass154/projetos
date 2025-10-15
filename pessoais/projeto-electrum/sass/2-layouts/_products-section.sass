@@ -1,0 +1,27 @@
+@use '../1-base/base-mixins' as bm
+@use '../1-base/variables' as *
+@use 'layouts-mixins' as *
+
+.products-grid
+   @include center-content
+   flex-direction: column
+   padding: 2rem 0
+
+   @include bm.tablet
+      padding: 2rem 1rem
+
+   h2
+      font-size: 2rem
+      text-transform: uppercase
+
+      @include bm.mobile
+         text-align: center
+
+   &-container
+      display: flex
+      justify-content: space-between
+      padding: 2rem 0
+
+      @include bm.mobile
+         flex-direction: column
+         align-items: center
