@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+   color-scheme: dark;
+}
+
+html,
+body,
+#root {
+   height: 100%;
+}
+
+@layer components {
+   .section-container {
+      @apply mx-auto max-w-6xl px-4 py-8
+   }
+
+   .section__title {
+      @apply text-3xl font-bold
+   }
+
+   .section__paragraph {
+      @apply text-slate-300 max-w-2xl
+   }
+
+   .section__grid-container {
+      @apply grid gap-4 grid-cols-1 md:grid-cols-3
+   }
+
+   .grid-container__card {
+      @apply rounded-2xl border border-white/10 bg-white/[0.02] p-6
+   }
+   
+   .button-cta {
+      @apply inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 font-medium transition
+   }
+}
